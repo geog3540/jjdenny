@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flow Map Project</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    img { max-width: 100%; height: auto; }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.button:hover {
+      background-color: #0056b3;
+    }
+    .answers {
+      font-size: 0.9em; /* smaller font */
+      margin-top: 20px;
+    }
+    .answers p {
+      margin-bottom: 15px; /* space between Q&A rows */
+    }
+    .answers strong {
+      display: block; /* makes the question start on its own row */
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flow Map Project (Assignment 7)</h1>
+
+  <h2>Flow Map Image</h2>
+  <img src="Flowmapper12.png" alt="Flow Map">
+
+  <h2>Download Flow Map Project File</h2>
+  <p>
+    <a class="button" href="flowmap.json" download>Download flowmap.json</a>
+  </p>
+
+  <h2>Interpretation of Flow Patterns</h2>
+  <div class="answers">
+    <p>
+      <strong>Design Choice:</strong> I used graduated circles that vary in size and color from light orange to a darker red, that are proportional to the total number of bikers visiting each station.
+    </p>
+    <p>
+      <strong>Justification:</strong>
+      <ul>
+        <li>I used graduated circles that represent quantitative point data (Koylu, C. &amp; Guo, D. (2017)). Larger circles naturally draw attention to high-traffic stations, which aligns with visual hierarchy principles.</li>
+        <li>The color gradient (orange to red) provides a sense of intensity, which red is commonly associated with "hotspots" or higher volumes (Koylu, C. &amp; Guo, D. (2017)).</li>
+        <li>This approach moves away from FlowMapper’s default choropleth node zones by using directly proportional symbology, which allows immediate visual comparison of station popularity without needing to reference a background polygon.</li>
+      </ul>
+    </p>
+    <p>
+      <strong>Flow Attractors (Receivers):</strong>
+      <ul>
+        <li>The Downtown and Near North Side areas are the main attractors, which receive the highest volume of incoming flows. This is indicated by the thicker and darker blue flow lines that converge on large, dark red nodes in the city core.</li>
+        <li>Stations near Millennium Park, Navy Pier, and the Loop have especially high inflow, because of their proximity to tourist destinations, employment centers, and public transit.</li>
+      </ul>
+    </p>
+    <p>
+      <strong>Flow Senders (Origins):</strong>
+      <ul>
+        <li>Because downtown sends high volumes of flows, some smaller stations on the city’s west and northwest sides appear to act more as origins than destinations.</li>
+        <li>Neighborhoods like West Town, Logan Square, and areas bordering West Garfield Park show medium to large-sized stations with several outgoing lines, which suggests that it’s more a commuter area from the suburbs to downtown.</li>
+      </ul>
+    </p>
+    <p>
+      <strong>General Flow Direction Patterns:</strong>
+      <ul>
+        <li>The dominant flow direction converges toward the central and lakeside areas from nearly all other directions, especially from the west and northwest.</li>
+        <li>There is a definite north-south corridor along the lakeshore that connects stations from Lincoln Park down to the South Loop, which shows recreational and commuter use along this accessible path.</li>
+        <li>There are fewer east-west connections in the southern part of the map, probably due to lower station density and residential zoning further south.</li>
+      </ul>
+    </p>
+  </div>  
+
+  <h2>Assignment 7 Questions</h2>
+  <div class="answers">
+    <p>
+      <strong>1. What is a client and what is a server?</strong>
+      -	A client is a device or application that requests data from a server. A server is a computer that provides data or services to the client, like showing a webpage when your browser asks for one.
+    </p>
+    <p>
+      <strong>2. How does a server know which file to read initially and why?</strong>
+      -	By default, a server looks for a file named index.html in the root folder because index.html is the standard home page or starting point for web servers.     </p>
+    <p>
+      <strong>3. What does a code repository do and why is it important?</strong>
+      -	A code repository stores your project’s files and tracks all changes to them. It is important because it helps you manage versions, and back up your code. It also allows you to work from any computer    </p>
+    <p>
+      <strong>4. Why do we create external CSS files while we can use styling inside of an html?</strong>
+      -	External CSS files design separate from html files, which makes code cleaner and easier to maintain. It also improves loading speed.    </p>
+    <p>
+      <strong>5. What does the “div tag” do, and how is it useful?</strong>
+      -	A div tag is a block-level container used to group HTML elements. It is useful for organizing layout especially when using JavaScript actions.    </p>
+    <p>
+      <strong>6. To describe styling in an html file, which tag do you need to use?</strong>
+      -	You use the “style” tag inside the “head” section to write internal CSS.
+    <p>
+      <strong>7. How do you create a link in the index.html which points to a file inside the same folder as the index.html?</strong>
+      -	Use the “<a” tag with a relative path. For example: <a href="otherfile.html">Go to Other Page</a>
+    </p>
+    <p>
+      <strong>8. What is a template and how is it useful for web site building?</strong>
+      -	A template is a reusable HTML structure that defines the layout of multiple pages. It is useful because it saves time and makes sure that there is consistency throughout multiple pages by reusing headers, footers, and navigation.    </p>
+    <p>
+      <strong>9. What does “pull” and “push” mean in using GitHub?</strong>
+      -	Pull means download changes from a remote GitHub repository to your local machine. Push means upload your local changes to a remote GitHub repository.     </p>
+    <p>
+      <strong>10. Why do we need to run a local web server? How do we run a local server using Python?</strong>
+      -	We need a local web server to test the changes that we make to out HTML code. To run a local server on python, use the “python3 -m http.server” and then open your browser at “http://localhost:8000.”    </p>
+  </div>
+  
+
+  <p><a href="index.html">← Back to Portfolio</a></p>
+</body>
+</html>
